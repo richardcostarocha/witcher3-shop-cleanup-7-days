@@ -1,0 +1,12 @@
+{
+  "name": "modLojasRenovadas7Dias",
+  "version": "0.4.9",
+  "author": "yero_gamer",
+  "useLooseScripts": true,
+  "succesfullyCooked": false,
+  "workshopId": 3818384556,
+  "modName": "Limpeza de Loja em 7 dias | Shop Cleanup in 7 Days",
+  "gameVersion": "29",
+  "dependencies": [],
+  "description": "Revenda em 7 dias com retorno de 125% ao vendedor, painel com localizacao e cancelamento de pendencias."
+}

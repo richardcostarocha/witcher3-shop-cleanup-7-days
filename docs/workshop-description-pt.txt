@@ -1,0 +1,57 @@
+﻿[h1]Limpeza de Loja em 7 dias[/h1]
+
+Os comerciantes revendem os itens que você vende a eles. Após sete dias do jogo, volte a conversar com o vendedor: os itens registrados são retirados do estoque, e o comerciante recebe 125% do valor que pagou por eles, arredondado para baixo.
+
+[h2]Funcionamento[/h2]
+[list]
+[*]Cada comerciante tem sua própria rodada.
+[*]A primeira venda sem pendências inicia o prazo. Outras vendas feitas enquanto houver pendências entram na rodada existente.
+[*]Recomprar cancela o registro das unidades recompradas.
+[*]Após zerar as pendências, a próxima venda inicia outra rodada.
+[*]O retorno vai para o vendedor. Você recebe o pagamento normal quando vende seu item, sem segundo pagamento pela revenda.
+[*]O mod processa somente itens registrados por ele. O estoque natural e as vendas anteriores à instalação não são limpos. Para registrar itens vendidos anteriormente, você pode recomprá-los e vendê-los novamente com o mod ativo.
+[/list]
+Receitas, mapas e itens protegidos continuam sujeitos às regras normais do jogo.
+
+[h2]Instalação e remoção[/h2]
+Inscreva-se, aguarde o download e reinicie o jogo.
+
+Para remover, cancele a inscrição e reinicie o jogo após a Steam sincronizar. Não exige instalador nem configuração pessoal de prioridades.
+
+Alterações no estoque e nas coroas já gravadas no save permanecem após remover o mod.
+
+Se remover o mod durante uma rodada, as pendências deixam de ser processadas e não geram o retorno de revenda. Para concluir a rodada, mantenha o mod ativo até aparecer [b]“Pendentes: 0”[/b].
+
+[h2]Compatibilidade[/h2]
+Outros mods que alteram merchantNPC.ws, guiShopInventoryComponent.ws ou scene_functions.ws podem entrar em conflito. Não há garantia de compatibilidade com todos os mods ou todas as versões do jogo.
+
+[h2]Versão 0.4.7[/h2]
+Os testes confirmaram a revenda de equipamentos e ingredientes, o processamento de itens que se juntam ao estoque natural, o prazo e a continuidade dos registros após reiniciar o jogo.
+
+O retorno de 125% foi confirmado pelo autor em teste no jogo.
+
+[h2]Painel de revenda — versão 0.4.8[/h2]
+No menu de pausa, abra [b]Revenda[/b] para acompanhar as lojas com itens registrados.
+[list]
+[*][b]Aguardando prazo:[/b] lojas cuja rodada ainda está contando os sete dias.
+[*][b]Prontos: visitar loja:[/b] lojas com prazo cumprido. Converse com o vendedor para concluir a revenda.
+[*]Os detalhes mostram a quantidade de itens, as horas restantes e a região do vendedor.
+[/list]
+O painel apenas consulta os registros, que acompanham o save carregado.
+
+Após atualizar de uma versão sem painel, visite as lojas onde já havia revendas pendentes para incluí-las na lista. Zero no painel significa zero pendências nas lojas acompanhadas. Antes de remover o mod, conclua as rodadas dessas lojas e salve a partida.
+
+O painel também altera r4Game.ws, game/gui/main_menu/ingameMenu.ws e igmStructureCreator.ws. Outros mods que alterem esses arquivos podem entrar em conflito.
+
+[h2]Atualização 0.4.9 — localização e cancelamento de rotinas[/h2]
+[list]
+[*]Os detalhes das lojas mostram [b]Última vez visto perto de:[/b], seguido da placa de viagem rápida descoberta mais próxima e da região. A referência fica salva e continua disponível ao viajar ou recarregar o save, tanto em [b]Aguardando prazo[/b] quanto em [b]Prontos: visitar loja[/b]. Ela representa o último local registrado, não um rastreamento em tempo real. Para preencher referências de rotinas antigas, revisite a loja uma vez.
+[*]O botão [b]Cancelar pendências desta loja[/b] permite cancelar manualmente uma rotina, com confirmação. Não gera retorno de coroas nem remove os itens do estoque; as outras rotinas permanecem. É útil quando você perde acesso ao vendedor.
+[*]As pendências da [b]Keira Metz[/b] são canceladas após sua morte efetiva. Tornar-se inimiga ou ficar inconsciente não basta. Mortes ocorridas antes desta atualização não são detectadas retroativamente; nesse caso, use o cancelamento manual.
+[*]O [b]herbalista do Porto de Kaer Trolde[/b] fica fora das rotinas de revenda por perder seus registros quando o jogo recria o vendedor. Ele continua comprando e vendendo normalmente. Caso ainda exista uma pendência antiga dele, cancele somente a entrada correspondente pelo painel. Os demais vendedores continuam elegíveis.
+[/list]
+O prazo de [b]sete dias[/b] e o retorno de [b]125% ao vendedor[/b] permanecem.
+
+[b]Compatibilidade adicional:[/b] esta atualização também altera [b]game/npc/npc.ws[/b], além dos scripts já usados pelo mod. Outros mods que alterem esse arquivo podem exigir uma combinação dos scripts. Continua independente de SlotComida.
+
+[b]Autor: yero_gamer[/b]

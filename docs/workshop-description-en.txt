@@ -1,0 +1,57 @@
+﻿[h1]Shop Cleanup in 7 Days[/h1]
+
+Merchants resell the items you sell to them. After seven in-game days, return and talk to the merchant: registered items are removed from their stock, and the merchant receives 125% of the amount they paid for those items, rounded down.
+
+[h2]How it works[/h2]
+[list]
+[*]Each merchant has their own resale cycle.
+[*]The first sale with no pending items starts the timer. Additional sales made while items are pending join the existing cycle.
+[*]Buying items back cancels the registration of the quantities repurchased.
+[*]Once there are no pending items, the next sale starts a new cycle.
+[*]The return goes to the merchant. You receive the normal payment when selling your items, with no second payment when they are resold.
+[*]The mod only processes items it has registered. Original merchant stock and items sold before installation are not cleared. To register previously sold items, you can buy them back and sell them again while the mod is active.
+[/list]
+Recipes, maps, and protected items remain subject to the game's normal rules.
+
+[h2]Installation and removal[/h2]
+Subscribe, wait for the download to finish, and restart the game.
+
+To remove the mod, unsubscribe and restart the game after Steam finishes syncing. No installer or manual priority configuration is required.
+
+Changes to stock and crowns already stored in your save remain after removing the mod.
+
+If you remove the mod during a cycle, pending items will no longer be processed and will not generate the resale return. To complete the cycle, keep the mod active until the receipt shows [b]zero pending items[/b].
+
+[h2]Compatibility[/h2]
+Other mods that modify merchantNPC.ws, guiShopInventoryComponent.ws, or scene_functions.ws may conflict. Compatibility with every mod or game version is not guaranteed.
+
+[h2]Version 0.4.7[/h2]
+Tests confirmed the resale of equipment and ingredients, the handling of sold items that merge with original merchant stock, the timer, and the persistence of registrations after restarting the game.
+
+The 125% return was confirmed by the author through in-game testing.
+
+[h2]Resale dashboard — version 0.4.8[/h2]
+Open [b]Revenda[/b] (Resale) in the pause menu to track shops with registered items. Dashboard labels currently appear in Portuguese; region names use the game's localized names.
+[list]
+[*][b]Aguardando prazo (Waiting):[/b] shops whose seven-day timer is still running.
+[*][b]Prontos: visitar loja (Ready: visit shop):[/b] shops whose timer has expired. Talk to the merchant to complete the resale.
+[*]Details show the item quantity, remaining hours and merchant's region.
+[/list]
+The dashboard only displays records, which follow the loaded save.
+
+After updating from a version without the dashboard, visit shops with existing pending resales to add them to the list. Zero on the dashboard means no pending items in the tracked shops. Before removing the mod, complete those shops' rounds and save your game.
+
+The dashboard also modifies r4Game.ws, game/gui/main_menu/ingameMenu.ws and igmStructureCreator.ws. Other mods modifying these files may conflict.
+
+[h2]Update 0.4.9 — shop locations and cancellation[/h2]
+[list]
+[*]Shop details show [b]Última vez visto perto de:[/b] (Last seen near), followed by the nearest discovered fast-travel signpost and the region. The reference is saved and remains available after travel or reloading, in both waiting and ready categories. It is the last recorded location, rather than live tracking. Revisit an existing shop once to add a reference to an older record.
+[*][b]Cancelar pendências desta loja[/b] (Cancel this shop's pending records) lets you cancel a resale round manually, with confirmation. Cancellation gives no resale income and does not remove the stock items; other rounds remain. This helps when a merchant becomes inaccessible.
+[*][b]Keira Metz's[/b] pending records are cancelled after her actual death. Becoming hostile or unconscious is insufficient. Deaths that happened before this update are not detected retroactively; use manual cancellation in that case.
+[*]The [b]Kaer Trolde harbor herbalist[/b] is excluded from resale tracking because his records are lost when the game recreates the merchant. Normal buying and selling remain available. If an old pending entry for him remains, cancel only that entry in the dashboard. Other merchants remain eligible.
+[/list]
+The [b]seven-day[/b] period and [b]125% return to the merchant[/b] are unchanged. In-game dashboard labels remain in Portuguese; place names use the game's localized text.
+
+[b]Additional compatibility note:[/b] this update also modifies [b]game/npc/npc.ws[/b], in addition to the files already used by the mod. Other mods modifying this file may require a script merge. SlotComida remains optional and independent.
+
+[b]Author: yero_gamer[/b]

@@ -1,0 +1,11 @@
+{
+  "modLojasRenovadas7Dias/content/info.json": "aa9bf900239f89804c12822d53e82213f7ac0cae86215039fdce0e1998f9f356",
+  "modLojasRenovadas7Dias/content/scripts/game/gui/_old/components/guiShopInventoryComponent.ws": "f07b335d9b5ae11da9368bab6e4df42089036d09adabbc034a4cc688830d8b70",
+  "modLojasRenovadas7Dias/content/scripts/game/gui/main_menu/ingamemenu/igmStructureCreator.ws": "a21782fe32bf88683486722c425622d6cb822e4b14e0fc9881e696e44427fdfe",
+  "modLojasRenovadas7Dias/content/scripts/game/gui/main_menu/ingameMenu.ws": "a4b1ca28facfe28f8d40f6a8ede9d4e4336d9e7d0dcce6b9af5a9310864317c8",
+  "modLojasRenovadas7Dias/content/scripts/game/npc/merchantNPC.ws": "893ad247dddddf5723205dc97dedc50b7ad748ef445fa09b892aa298bcc32aea",
+  "modLojasRenovadas7Dias/content/scripts/game/npc/npc.ws": "1d41143eab2caf655197c366b7f0aaae7a097429072ec98e2b6efd112ed18a45",
+  "modLojasRenovadas7Dias/content/scripts/game/r4Game.ws": "13e860d0e00af543bc798ad31faf31cd2061308fd9bae1ca24488c32e3806b1a",
+  "modLojasRenovadas7Dias/content/scripts/game/scenes/scene_functions.ws": "19eb472f99ba6f562ac10e226d3e2c06acea95209ab1ae2d2445461d8bfbe26c",
+  "modLojasRenovadas7Dias/content/scripts/game/weeklyResaleMonitor.ws": "c671b322b2b0cc630f3eb16132844d4ff732533a3d92524dad4e86dfe82db810"
+}

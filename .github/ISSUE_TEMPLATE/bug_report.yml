@@ -1,0 +1,24 @@
+name: Bug report / Relato de falha
+description: Report a reproducible problem / Descreva uma falha reproduzível
+title: "[Bug] "
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Game and mod versions / Versões do jogo e do mod
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and expected result / Passos e resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Error text, screenshots or video / Erro, imagens ou vídeo
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Other active mods / Outros mods ativos
